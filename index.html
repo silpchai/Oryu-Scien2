@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด: พลังงานไฟฟ้าแสนสนุก</title>
+    <style>
+        body { font-family: 'Sarabun', sans-serif; background-color: #f0f8ff; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #ffcc00; text-shadow: 1px 1px 2px #000; text-align: center; }
+        h2 { border-left: 5px solid #2196F3; padding-left: 10px; color: #333; }
+        .question-box { margin-bottom: 20px; padding: 15px; border: 1px dashed #ccc; border-radius: 10px; }
+        select, input { padding: 5px; font-size: 16px; border-radius: 5px; border: 1px solid #ddd; }
+        .btn-submit { display: block; width: 100%; padding: 15px; background-color: #4CAF50; color: white; border: none; border-radius: 10px; font-size: 20px; cursor: pointer; margin-top: 20px; }
+        .btn-submit:hover { background-color: #45a049; }
+        #result { margin-top: 20px; text-align: center; font-size: 24px; font-weight: bold; color: #2196F3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>⚡ พลังงานไฟฟ้าแสนสนุก ⚡</h1>
+
+    <h2>🎨 ตอนที่ 1: วงจรไฟฟ้า "ครบทีม"</h2>
+    <p>คำชี้แจง: เลือกส่วนประกอบของวงจรไฟฟ้าอย่างง่ายให้ถูกต้อง [cite: 3]</p>
+    <div class="question-box">
+        🔋 <b>ถ่านไฟฉาย:</b> ทำหน้าที่ให้พลังงาน เรียกว่า 
+        <select id="q1">
+            <option value="">-- เลือกคำตอบ --</option>
+            <option value="แหล่งกำเนิดไฟฟ้า">แหล่งกำเนิดไฟฟ้า</option>
+            <option value="สายไฟ">สายไฟ</option>
+            <option value="เครื่องใช้ไฟฟ้า">เครื่องใช้ไฟฟ้า</option>
+        </select> [cite: 4]
+    </div>
+    <div class="question-box">
+        🔌 <b>เส้นลวดทองแดง:</b> ทำหน้าที่ทางเดินของไฟ เรียกว่า 
+        <select id="q2">
+            <option value="">-- เลือกคำตอบ --</option>
+            <option value="แหล่งกำเนิดไฟฟ้า">แหล่งกำเนิดไฟฟ้า</option>
+            <option value="สายไฟ">สายไฟ</option>
+            <option value="เครื่องใช้ไฟฟ้า">เครื่องใช้ไฟฟ้า</option>
+        </select> [cite: 5]
+    </div>
+    <div class="question-box">
+        💡 <b>หลอดไฟ:</b> ทำหน้าที่เปลี่ยนไฟเป็นแสง เรียกว่า 
+        <select id="q3">
+            <option value="">-- เลือกคำตอบ --</option>
+            <option value="แหล่งกำเนิดไฟฟ้า">แหล่งกำเนิดไฟฟ้า</option>
+            <option value="สายไฟ">สายไฟ</option>
+            <option value="เครื่องใช้ไฟฟ้า">เครื่องใช้ไฟฟ้า</option>
+        </select> [cite: 6]
+    </div>
+
+    <h2>🔍 ตอนที่ 2: ตัวนำ หรือ ฉนวน?</h2>
+    <p>คำชี้แจง: เลือกประเภทของวัสดุ (ตัวนำ = ไฟผ่านได้, ฉนวน = ไฟผ่านไม่ได้) </p>
+    <div class="question-box">
+        1. ช้อนสแตนเลส: <select id="q4"><option value="">-- เลือก --</option><option value="ตัวนำ">ตัวนำไฟฟ้า</option><option value="ฉนวน">ฉนวนไฟฟ้า</option></select> [cite: 11] <br>
+        2. ยางลบ: <select id="q5"><option value="">-- เลือก --</option><option value="ตัวนำ">ตัวนำไฟฟ้า</option><option value="ฉนวน">ฉนวนไฟฟ้า</option></select> [cite: 12] <br>
+        3. ตะปูเหล็ก: <select id="q6"><option value="">-- เลือก --</option><option value="ตัวนำ">ตัวนำไฟฟ้า</option><option value="ฉนวน">ฉนวนไฟฟ้า</option></select> [cite: 13] <br>
+        4. ไม้บรรทัดพลาสติก: <select id="q7"><option value="">-- เลือก --</option><option value="ตัวนำ">ตัวนำไฟฟ้า</option><option value="ฉนวน">ฉนวนไฟฟ้า</option></select> [cite: 14]
+    </div>
+
+    <h2>🛠️ ตอนที่ 3: ไฟฟ้าแปลงร่าง!</h2>
+    <p>คำชี้แจง: จับคู่เครื่องใช้ไฟฟ้ากับพลังงานที่ได้รับ </p>
+    <div class="question-box">
+        🌀 พัดลม: <select id="q8"><option value="">-- เลือกพลังงาน --</option><option value="ความร้อน">พลังงานความร้อน</option><option value="เสียง">พลังงานเสียง</option><option value="กล">พลังงานกล</option><option value="แสง">พลังงานแสง</option></select>  <br>
+        💨 เตารีด: <select id="q9"><option value="">-- เลือกพลังงาน --</option><option value="ความร้อน">พลังงานความร้อน</option><option value="เสียง">พลังงานเสียง</option><option value="กล">พลังงานกล</option><option value="แสง">พลังงานแสง</option></select> 
+    </div>
+
+    <h2>⚠️ ตอนที่ 4: หนูน้อยปลอดภัย & ประหยัดไฟ</h2>
+    <p>คำชี้แจง: เลือก "ควรทำ" ✔️ หรือ "ไม่ควรทำ" ❌ </p>
+    <div class="question-box">
+        1. เช็ดมือให้แห้งสนิทก่อนเปิดสวิตช์ไฟ: 
+        <select id="q10"><option value="">-- เลือก --</option><option value="ควร">ควรทำ</option><option value="ไม่ควร">ไม่ควรทำ</option></select> [cite: 22]
+    </div>
+    <div class="question-box">
+        2. ใช้เหล็กแหลมแหย่เข้าไปในรูปลั๊กไฟ: 
+        <select id="q11"><option value="">-- เลือก --</option><option value="ควร">ควรทำ</option><option value="ไม่ควร">ไม่ควรทำ</option></select> [cite: 24]
+    </div>
+
+    <button class="btn-submit" onclick="checkAnswers()">ตรวจคะแนน</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function checkAnswers() {
+    let score = 0;
+    if(document.getElementById('q1').value === 'แหล่งกำเนิดไฟฟ้า') score++;
+    if(document.getElementById('q2').value === 'สายไฟ') score++;
+    if(document.getElementById('q3').value === 'เครื่องใช้ไฟฟ้า') score++;
+    if(document.getElementById('q4').value === 'ตัวนำ') score++;
+    if(document.getElementById('q5').value === 'ฉนวน') score++;
+    if(document.getElementById('q6').value === 'ตัวนำ') score++;
+    if(document.getElementById('q7').value === 'ฉนวน') score++;
+    if(document.getElementById('q8').value === 'กล') score++;
+    if(document.getElementById('q9').value === 'ความร้อน') score++;
+    if(document.getElementById('q10').value === 'ควร') score++;
+    if(document.getElementById('q11').value === 'ไม่ควร') score++;
+
+    document.getElementById('result').innerHTML = "คุณได้คะแนน " + score + " / 11 คะแนน";
+}
+</script>
+
+</body>
+</html>
